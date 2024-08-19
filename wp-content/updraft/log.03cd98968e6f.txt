@@ -1,0 +1,90 @@
+0000.025 () Opened log file at time: Mon, 19 Aug 2024 21:10:42 +0000 on http://localhost:8000
+0000.026 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 8.2.22 (apache2handler, Linux 9d03d37798f2 5.15.153.1-microsoft-standard-WSL2 #1 SMP Fri Mar 29 23:14:13 UTC 2024 x86_64) MySQL: 8.0.39 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.61 (Debian) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5.4M | 6M) multisite: N openssl: OpenSSL 3.0.13 30 Jan 2024 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.026 () Free space on disk containing Updraft's temporary directory: 973449.4 MB
+0000.064 () Restore setup, now closing connection and starting restore over AJAX.
+0000.022 () Opened log file at time: Mon, 19 Aug 2024 21:10:42 +0000 on http://localhost:8000
+0000.023 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 8.2.22 (apache2handler, Linux 9d03d37798f2 5.15.153.1-microsoft-standard-WSL2 #1 SMP Fri Mar 29 23:14:13 UTC 2024 x86_64) MySQL: 8.0.39 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.61 (Debian) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.3M | 6M) multisite: N openssl: OpenSSL 3.0.13 30 Jan 2024 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.023 () Free space on disk containing Updraft's temporary directory: 973449.4 MB
+0000.023 () Ensuring WP_Filesystem is setup for a restore
+0000.023 () WP_Filesystem is setup and ready for a restore
+0000.041 () Restore job started. Entities to restore: uploads, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.042 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.042 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.059 () Entity: db
+0000.059 () restore_backup(backup_file=backup_2024-08-19-2106_Test_085664c61cba-db.gz, type=db, info=a:0:{}, last_one=)
+0000.059 () Unpacking backup... (backup_2024-08-19-2106_Test_085664c61cba-db.gz, 0.1 Mb)
+0000.059 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.060 () Database successfully unpacked
+0000.060 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.060 () Using direct MySQL access; value of use_mysqli is: 1
+0000.061 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.295 () Max packet size: 64 MB
+0000.295 () Entering maintenance mode
+0000.295 () Enabling Maintenance mode&#8230;
+0000.323 () is_stored_routine_supported(): An error occurred while attempting to check the support of stored routines creation (You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable) - CREATE FUNCTION updraft_test_stored_routine() RETURNS tinyint(1) DETERMINISTIC READS SQL DATA RETURN true)
+0000.324 () Backup of: http://localhost:8000
+0000.326 () Content URL: http://localhost:8000/wp-content
+0000.326 () Uploads URL: http://localhost:8000/wp-content/uploads
+0000.326 () Old table prefix: wp_
+0000.326 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.326 () Site information: multisite=0
+0000.326 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.327 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.328 () New table prefix: o0_
+0000.386 () Processing table (InnoDB): wp_options - will restore as: o0_options
+0001.121 () Atomic restore: dropping original table (wp_options)
+0001.173 () Atomic restore: renaming new table (o0_options) to final table name (wp_options)
+0001.232 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0001.302 () Processing table (InnoDB): wp_users - will restore as: o0_users
+0001.556 () Atomic restore: dropping original table (wp_users)
+0001.622 () Atomic restore: renaming new table (o0_users) to final table name (wp_users)
+0001.737 () Processing table (InnoDB): wp_usermeta - will restore as: o0_usermeta
+0001.951 () Atomic restore: dropping original table (wp_usermeta)
+0002.008 () Atomic restore: renaming new table (o0_usermeta) to final table name (wp_usermeta)
+0002.092 () Processing table (InnoDB): wp_commentmeta - will restore as: o0_commentmeta
+0002.200 () Atomic restore: dropping original table (wp_commentmeta)
+0002.222 () Atomic restore: renaming new table (o0_commentmeta) to final table name (wp_commentmeta)
+0002.257 () Processing table (InnoDB): wp_comments - will restore as: o0_comments
+0002.550 () Atomic restore: dropping original table (wp_comments)
+0002.628 () Atomic restore: renaming new table (o0_comments) to final table name (wp_comments)
+0002.704 () Processing table (InnoDB): wp_links - will restore as: o0_links
+0002.882 () Atomic restore: dropping original table (wp_links)
+0002.950 () Atomic restore: renaming new table (o0_links) to final table name (wp_links)
+0003.010 () Processing table (InnoDB): wp_postmeta - will restore as: o0_postmeta
+0003.196 () Atomic restore: dropping original table (wp_postmeta)
+0003.247 () Atomic restore: renaming new table (o0_postmeta) to final table name (wp_postmeta)
+0003.313 () Processing table (InnoDB): wp_posts - will restore as: o0_posts
+0003.564 () Atomic restore: dropping original table (wp_posts)
+0003.615 () Atomic restore: renaming new table (o0_posts) to final table name (wp_posts)
+0003.677 () Processing table (InnoDB): wp_term_relationships - will restore as: o0_term_relationships
+0003.836 () Atomic restore: dropping original table (wp_term_relationships)
+0003.915 () Atomic restore: renaming new table (o0_term_relationships) to final table name (wp_term_relationships)
+0003.970 () Processing table (InnoDB): wp_term_taxonomy - will restore as: o0_term_taxonomy
+0004.155 () Atomic restore: dropping original table (wp_term_taxonomy)
+0004.216 () Atomic restore: renaming new table (o0_term_taxonomy) to final table name (wp_term_taxonomy)
+0004.275 () Processing table (InnoDB): wp_termmeta - will restore as: o0_termmeta
+0004.446 () Atomic restore: dropping original table (wp_termmeta)
+0004.510 () Atomic restore: renaming new table (o0_termmeta) to final table name (wp_termmeta)
+0004.563 () Processing table (InnoDB): wp_terms - will restore as: o0_terms
+0004.712 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0004.730 () Unlocking database and leaving maintenance mode
+0004.730 () Disabling Maintenance mode&#8230;
+0004.730 () Atomic restore: dropping original table (wp_terms)
+0004.782 () Atomic restore: renaming new table (o0_terms) to final table name (wp_terms)
+0004.849 () Finished: lines processed: 42 in 4.78 seconds
+0004.850 () Cleaning up rubbish...
+0004.850 () Begin search and replace (updraftplus_restored_db)
+0004.850 () [Database-replace-site-url] Database: search and replace site URL
+0004.850 () This option was not selected.
+0004.880 () Entity: uploads
+0004.880 () restore_backup(backup_file=backup_2024-08-19-2106_Test_085664c61cba-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:32:"/var/www/html/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=1)
+0004.881 () Unpacking backup... (backup_2024-08-19-2106_Test_085664c61cba-uploads.zip, 0.3 MB)
+0004.884 () Unzipping backup_2024-08-19-2106_Test_085664c61cba-uploads.zip to /var/www/html/wp-content/upgrade/b7476984/ using UpdraftPlus_ZipArchive, starting index 0
+0004.904 () Unzip progress: 5 out of 5 files (290.6 KB, uploads/2024/08/Capture-decran-2024-05-16-233754-fotor-bg-remover-20240818231733.png)
+0004.906 () Moving old data: filesystem method / updraft_dir is potentially possible
+0004.906 () Moving old data: can potentially use wp_filesystem method / -old
+0004.906 () Moving old data out of the way...
+0004.911 () Moving unpacked backup into place...
+0004.911 () Cleaning up rubbish...
+0004.955 () Restore successful!
+0004.955 () Restore successful

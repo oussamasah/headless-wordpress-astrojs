@@ -1,0 +1,62 @@
+0000.041 (R) [notice] Looking for db archive: file name: backup_2024-08-19-2106_Test_085664c61cba-db.gz
+0000.041 (R) [notice] Archive is expected to be size: 86.4 KB: OK
+0000.042 (R) [notice] Looking for uploads archive: file name: backup_2024-08-19-2106_Test_085664c61cba-uploads.zip
+0000.042 (R) [notice] Archive is expected to be size: 291.5 KB: OK
+0000.042 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.059 (R) [notice] Unpacking backup... (backup_2024-08-19-2106_Test_085664c61cba-db.gz, 0.1 Mb)
+0000.060 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.295 (R) [notice] Enabling Maintenance mode&#8230;
+0000.324 (R) [notice] Backup of: http://localhost:8000
+0000.326 (R) [notice] Content URL: http://localhost:8000/wp-content
+0000.326 (R) [notice] Uploads URL: http://localhost:8000/wp-content/uploads
+0000.326 (R) [notice] Old table prefix: wp_
+0000.326 (R) [notice] UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.326 (R) [notice] Site information: multisite = 0
+0000.326 (R) [notice] Site information: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.328 (R) [notice] New table prefix: o0_
+0000.386 (R) [notice] Processing table (InnoDB):  wp_options - will restore as: o0_options
+0001.121 (R) [notice] Atomic restore: dropping original table (wp_options)
+0001.173 (R) [notice] Atomic restore: renaming new table (o0_options) to final table name (wp_options)
+0001.302 (R) [notice] Processing table (InnoDB):  wp_users - will restore as: o0_users
+0001.556 (R) [notice] Atomic restore: dropping original table (wp_users)
+0001.623 (R) [notice] Atomic restore: renaming new table (o0_users) to final table name (wp_users)
+0001.737 (R) [notice] Processing table (InnoDB):  wp_usermeta - will restore as: o0_usermeta
+0001.951 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0002.008 (R) [notice] Atomic restore: renaming new table (o0_usermeta) to final table name (wp_usermeta)
+0002.092 (R) [notice] Processing table (InnoDB):  wp_commentmeta - will restore as: o0_commentmeta
+0002.201 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0002.222 (R) [notice] Atomic restore: renaming new table (o0_commentmeta) to final table name (wp_commentmeta)
+0002.257 (R) [notice] Processing table (InnoDB):  wp_comments - will restore as: o0_comments
+0002.551 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0002.628 (R) [notice] Atomic restore: renaming new table (o0_comments) to final table name (wp_comments)
+0002.704 (R) [notice] Processing table (InnoDB):  wp_links - will restore as: o0_links
+0002.882 (R) [notice] Atomic restore: dropping original table (wp_links)
+0002.950 (R) [notice] Atomic restore: renaming new table (o0_links) to final table name (wp_links)
+0003.010 (R) [notice] Processing table (InnoDB):  wp_postmeta - will restore as: o0_postmeta
+0003.196 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0003.247 (R) [notice] Atomic restore: renaming new table (o0_postmeta) to final table name (wp_postmeta)
+0003.313 (R) [notice] Processing table (InnoDB):  wp_posts - will restore as: o0_posts
+0003.564 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0003.615 (R) [notice] Atomic restore: renaming new table (o0_posts) to final table name (wp_posts)
+0003.677 (R) [notice] Processing table (InnoDB):  wp_term_relationships - will restore as: o0_term_relationships
+0003.836 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0003.915 (R) [notice] Atomic restore: renaming new table (o0_term_relationships) to final table name (wp_term_relationships)
+0003.970 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy - will restore as: o0_term_taxonomy
+0004.155 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0004.217 (R) [notice] Atomic restore: renaming new table (o0_term_taxonomy) to final table name (wp_term_taxonomy)
+0004.275 (R) [notice] Processing table (InnoDB):  wp_termmeta - will restore as: o0_termmeta
+0004.446 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0004.510 (R) [notice] Atomic restore: renaming new table (o0_termmeta) to final table name (wp_termmeta)
+0004.563 (R) [notice] Processing table (InnoDB):  wp_terms - will restore as: o0_terms
+0004.730 (R) [notice] Disabling Maintenance mode&#8230;
+0004.730 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0004.783 (R) [notice] Atomic restore: renaming new table (o0_terms) to final table name (wp_terms)
+0004.849 (R) [notice] Finished: lines processed: 42 in 4.78 seconds
+0004.850 (R) [notice] Cleaning up rubbish...
+0004.850 (R) [notice] This option was not selected.
+0004.881 (R) [notice] Unpacking backup... (backup_2024-08-19-2106_Test_085664c61cba-uploads.zip, 0.3 MB)
+0004.904 (R) [notice] Unzip progress: 5 out of 5 files (290.6 KB, uploads/2024/08/Capture-decran-2024-05-16-233754-fotor-bg-remover-20240818231733.png)
+0004.906 (R) [notice] Moving old data out of the way...
+0004.911 (R) [notice] Moving unpacked backup into place...
+0004.911 (R) [notice] Cleaning up rubbish...
+0004.955 (R) [notice] Restore successful!

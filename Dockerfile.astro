@@ -1,0 +1,21 @@
+FROM node:18-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the existing Astro project to the container
+COPY ./astro-project /app/astro-project
+
+# Set working directory to the Astro project
+WORKDIR /app/astro-project
+
+# Install dependencies
+RUN npm install
+RUN npm install graphql-request
+
+
+# Expose port 4321
+EXPOSE 4321
+
+# Start Astro project
+CMD ["npm", "run", "dev", "--", "--host"]
