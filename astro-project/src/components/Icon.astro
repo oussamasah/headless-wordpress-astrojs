@@ -1,16 +1,21 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 import { iconPaths } from './IconPaths';
-
+type IconKeys = keyof typeof iconPaths;
 interface Props {
-	icon: string;
+	icon: IconKeys | string;
 	color?: string;
 	gradient?: boolean;
 	size?: string;
 }
 
 const { color = 'currentcolor', gradient, icon, size } = Astro.props;
-const iconPath = icon;
+var iconPath
+if (typeof icon === 'string' && icon.startsWith('<path')) {
+  iconPath = icon;
+} else if (icon in iconPaths) {  // Ensure 'icon' is a valid key in 'iconPaths'
+  iconPath = iconPaths[icon as IconKeys]; // Type assertion to satisfy TypeScript
+}
 
 const attrs: HTMLAttributes<'svg'> = {};
 if (size) attrs.style = { '--size': size };

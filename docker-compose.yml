@@ -44,6 +44,7 @@ services:
     container_name: my-headless-project-astro
     ports:
       - "4321:4321"
+      - "4421:4421"
     volumes:
       - ./astro-project:/app/astro-project
     depends_on:

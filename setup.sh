@@ -53,6 +53,11 @@ docker exec my-headless-project-wordpress wp plugin install wpgraphql-acf --acti
 docker exec my-headless-project-wordpress wp plugin install updraftplus --activate --allow-root
 docker cp advanced-custom-fields-pro my-headless-project-wordpress:/var/www/html/wp-content/plugins/
 docker exec my-headless-project-wordpress wp plugin advanced-custom-fields-pro --activate --allow-root
+docker exec my-headless-project-wordpress wp plugin install jwt-authentication-for-wp-rest-api --activate --allow-root
+
+
+
+
 # Delete all posts
 echo "Deleting all posts..."
 docker exec my-headless-project-wordpress wp post delete $(docker exec my-headless-project-wordpress wp post list --format=ids) --force --allow-root

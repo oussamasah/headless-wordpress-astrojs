@@ -1,5 +1,12 @@
 .PHONY: init
 
+run:
+	docker-compose up -d
+
+restart:
+	docker-compose down
+	docker-compose up -d
+	
 init:
 	sudo ./setup.sh
 

@@ -5,7 +5,7 @@ const { skills } = Astro.props;
 
 <section class="box skills">
 {
-	skills.map((s) => (
+	skills.map((s:any) => (
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon={s.icon} color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>{s.title}</h2>

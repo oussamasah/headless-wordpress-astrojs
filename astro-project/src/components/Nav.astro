@@ -2,40 +2,23 @@
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
+import {getAllSocial} from "../utils/graphql"
 
 
 
-const responseSocial = await fetch(import.meta.env.WP_URL, {
-     method: 'POST',
-     headers: { 'Content-Type': 'application/json' },
-     body: JSON.stringify({
-       query: `
-         query GetSocialContact {
-  socialContacts {
-    nodes {
-	title
-      socials {
-        icon
-        link
-      }
-    }
-  }
-}
-       `
-     })
-   });
 
-   const jsonSocial = await responseSocial.json();
+   const jsonSocial = await getAllSocial();
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/' },
 	{ label: 'Work', href: '/work/' },
+	{ label: 'Blog', href: '/blog/1' },
 	{ label: 'About', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
-const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = jsonSocial.data.socialContacts.nodes.map((s) => ( { label: s.title, href: s.socials.link, icon:s.socials.icon }));
+const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = jsonSocial.socialContacts.nodes.map((s:any) => ( { label: s.title, href: s.socials.link, icon:s.socials.icon }));
 ---
 
 <nav>
