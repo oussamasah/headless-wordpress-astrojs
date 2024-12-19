@@ -1,28 +1,28 @@
-# Headless WordPress & Astro.js CMS Generator
+# Headless WordPress & Astro.js CMS Generator with Docker
 
-This project enables the creation of headless CMS websites using **Astro.js** as the front-end and **WordPress** as the back-end, powered by **GraphQL**. With this system, you can easily set up a WordPress-powered website with Astro.js as the static site generator, allowing for flexible, fast, and SEO-friendly websites.
+This project allows you to generate dynamic websites using **WordPress** as a headless CMS and **Astro.js** as the static site generator, all within an automated Dockerized environment. It uses **GraphQL** to fetch content from WordPress, ensuring fast, SEO-friendly, and flexible websites. The system automates the configuration of the architecture, making it easy to set up and deploy.
 
 ## Features
-- **Headless CMS**: Uses **WordPress** for content management and **GraphQL** to fetch content for the front-end.
-- **Astro.js Integration**: Seamlessly integrates WordPress content into static websites built with **Astro.js**.
-- **Dynamic Site Generation**: Content from WordPress is fetched in real-time via GraphQL and rendered by Astro.js to generate static pages.
-- **SEO-Optimized**: Astro.js generates static HTML, making websites faster and more SEO-friendly.
-- **Modular Setup**: Easily customizable to work with any WordPress site and dynamically generate content-driven static websites.
+- **Headless CMS**: Use **WordPress** for content management with **GraphQL** to fetch content for the front-end.
+- **Astro.js Integration**: Seamlessly integrate WordPress content into static websites built with **Astro.js**.
+- **Dockerized Environment**: All components (WordPress, MySQL, and the front-end) run in separate Docker containers, making setup and deployment easy.
+- **Automated Architecture Setup**: Automated Docker configuration to spin up all services with a single command.
+- **Real-Time Content Fetching**: Fetch WordPress content dynamically via GraphQL and render it with Astro.js.
+- **SEO-Friendly**: Static HTML generation by Astro.js, optimizing the site for SEO performance.
 
 ## Tech Stack
 - **Backend**: WordPress (Headless CMS)
 - **Frontend**: Astro.js (Static Site Generator)
 - **API**: GraphQL (for fetching content from WordPress)
 - **Database**: MySQL (used by WordPress)
-- **Deployment**: Docker (for containerized environment)
+- **Containerization**: Docker (for containerized environment)
 
 ## Installation
 
 ### Prerequisites
-Ensure you have the following tools installed:
-- [Node.js](https://nodejs.org/) (version 16 or higher)
-- [Composer](https://getcomposer.org/)
-- [WordPress](https://wordpress.org/) with the **WPGraphQL** plugin installed
+Make sure you have Docker and Docker Compose installed:
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 ### Getting Started
 
